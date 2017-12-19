@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="css/noJS.css" />
+    </noscript>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+        /* Document
+               ========================================================================== */
+        /**
+             * 1. Correct the line height in all browsers.
+             * 2. Prevent adjustments of font size after orientation changes in
+             *    IE on Windows Phone and in iOS.
+             */
+
+        html {
+            line-height: 1.15;
+            /* 1 */
+            -ms-text-size-adjust: 100%;
+            /* 2 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
+        }
+        /* Sections
+               ========================================================================== */
+        /**
+             * Remove the margin in all browsers (opinionated).
+             */
+
+        body {
+            margin: 0;
+        }
+        /**
+             * Add the correct display in IE 9-.
+             */
+
+        article,
+        aside,
+        footer,
+        header,
+        nav,
+        section {
+            display: block;
+        }
+        /**
+             * Correct the font size and margin on `h1` elements within `section` and
+             * `article` contexts in Chrome, Firefox, and Safari.
+             */
+
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+        /* Grouping content
+               ========================================================================== */
+        /**
+             * Add the correct display in IE 9-.
+             * 1. Add the correct display in IE.
+             */
+
+        figcaption,
+        figure,
+        main {
+            /* 1 */
+            display: block;
+        }
+        /**
+             * Add the correct margin in IE 8.
+             */
+
+        figure {
+            margin: 1em 40px;
+        }
+        /**
+             * 1. Add the correct box sizing in Firefox.
+             * 2. Show the overflow in Edge and IE.
+             */
+
+        hr {
+            box-sizing: content-box;
+            /* 1 */
+            height: 0;
+            /* 1 */
+            overflow: visible;
+            /* 2 */
+        }
+        /**
+             * 1. Correct the inheritance and scaling of font size in all browsers.
+             * 2. Correct the odd `em` font sizing in all browsers.
+             */
+
+        pre {
+            font-family: monospace, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+        /* Text-level semantics
+               ========================================================================== */
+        /**
+             * 1. Remove the gray background on active links in IE 10.
+             * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+             */
+
+        a {
+            background-color: transparent;
+            /* 1 */
+            -webkit-text-decoration-skip: objects;
+            /* 2 */
+        }
+        /**
+             * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+             * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+             */
+
+        abbr[title] {
+            border-bottom: none;
+            /* 1 */
+            text-decoration: underline;
+            /* 2 */
+            text-decoration: underline dotted;
+            /* 2 */
+        }
+        /**
+             * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+             */
+
+        b,
+        strong {
+            font-weight: inherit;
+        }
+        /**
+             * Add the correct font weight in Chrome, Edge, and Safari.
+             */
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+        /**
+             * 1. Correct the inheritance and scaling of font size in all browsers.
+             * 2. Correct the odd `em` font sizing in all browsers.
+             */
+
+        code,
+        kbd,
+        samp {
+            font-family: monospace, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+        /**
+             * Add the correct font style in Android 4.3-.
+             */
+
+        dfn {
+            font-style: italic;
+        }
+        /**
+             * Add the correct background and color in IE 9-.
+             */
+
+        mark {
+            background-color: #ff0;
+            color: #000;
+        }
+        /**
+             * Add the correct font size in all browsers.
+             */
+
+        small {
+            font-size: 80%;
+        }
+        /**
+             * Prevent `sub` and `sup` elements from affecting the line height in
+             * all browsers.
+             */
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+        /* Embedded content
+               ========================================================================== */
+        /**
+             * Add the correct display in IE 9-.
+             */
+
+        audio,
+        video {
+            display: inline-block;
+        }
+        /**
+             * Add the correct display in iOS 4-7.
+             */
+
+        audio:not([controls]) {
+            display: none;
+            height: 0;
+        }
+        /**
+             * Remove the border on images inside links in IE 10-.
+             */
+
+        img {
+            border-style: none;
+        }
+        /**
+             * Hide the overflow in IE.
+             */
+
+        svg:not(:root) {
+            overflow: hidden;
+        }
+        /* Forms
+               ========================================================================== */
+        /**
+             * 1. Change the font styles in all browsers (opinionated).
+             * 2. Remove the margin in Firefox and Safari.
+             */
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: sans-serif;
+            /* 1 */
+            font-size: 100%;
+            /* 1 */
+            line-height: 1.15;
+            /* 1 */
+            margin: 0;
+            /* 2 */
+        }
+        /**
+             * Show the overflow in IE.
+             * 1. Show the overflow in Edge.
+             */
+
+        button,
+        input {
+            /* 1 */
+            overflow: visible;
+        }
+        /**
+             * Remove the inheritance of text transform in Edge, Firefox, and IE.
+             * 1. Remove the inheritance of text transform in Firefox.
+             */
+
+        button,
+        select {
+            /* 1 */
+            text-transform: none;
+        }
+        /**
+             * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+             *    controls in Android 4.
+             * 2. Correct the inability to style clickable types in iOS and Safari.
+             */
+
+        button,
+        html [type="button"],
+        /* 1 */
+
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button;
+            /* 2 */
+        }
+        /**
+             * Remove the inner border and padding in Firefox.
+             */
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+        /**
+             * Restore the focus styles unset by the previous rule.
+             */
+
+        button:-moz-focusring,
+        [type="button"]:-moz-focusring,
+        [type="reset"]:-moz-focusring,
+        [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText;
+        }
+        /**
+             * Correct the padding in Firefox.
+             */
+
+        fieldset {
+            padding: 0.35em 0.75em 0.625em;
+        }
+        /**
+             * 1. Correct the text wrapping in Edge and IE.
+             * 2. Correct the color inheritance from `fieldset` elements in IE.
+             * 3. Remove the padding so developers are not caught out when they zero out
+             *    `fieldset` elements in all browsers.
+             */
+
+        legend {
+            box-sizing: border-box;
+            /* 1 */
+            color: inherit;
+            /* 2 */
+            display: table;
+            /* 1 */
+            max-width: 100%;
+            /* 1 */
+            padding: 0;
+            /* 3 */
+            white-space: normal;
+            /* 1 */
+        }
+        /**
+             * 1. Add the correct display in IE 9-.
+             * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+             */
+
+        progress {
+            display: inline-block;
+            /* 1 */
+            vertical-align: baseline;
+            /* 2 */
+        }
+        /**
+             * Remove the default vertical scrollbar in IE.
+             */
+
+        textarea {
+            overflow: auto;
+        }
+        /**
+             * 1. Add the correct box sizing in IE 10-.
+             * 2. Remove the padding in IE 10-.
+             */
+
+        [type="checkbox"],
+        [type="radio"] {
+            box-sizing: border-box;
+            /* 1 */
+            padding: 0;
+            /* 2 */
+        }
+        /**
+             * Correct the cursor style of increment and decrement buttons in Chrome.
+             */
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+        /**
+             * 1. Correct the odd appearance in Chrome and Safari.
+             * 2. Correct the outline style in Safari.
+             */
+
+        [type="search"] {
+            -webkit-appearance: textfield;
+            /* 1 */
+            outline-offset: -2px;
+            /* 2 */
+        }
+        /**
+             * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+             */
+
+        [type="search"]::-webkit-search-cancel-button,
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+        /**
+             * 1. Correct the inability to style clickable types in iOS and Safari.
+             * 2. Change font properties to `inherit` in Safari.
+             */
+
+         ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            /* 1 */
+            font: inherit;
+            /* 2 */
+        }
+        /* Interactive
+               ========================================================================== */
+        /*
+             * Add the correct display in IE 9-.
+             * 1. Add the correct display in Edge, IE, and Firefox.
+             */
+
+        details,
+        /* 1 */
+
+        menu {
+            display: block;
+        }
+        /*
+             * Add the correct display in all browsers.
+             */
+
+        summary {
+            display: list-item;
+        }
+        /* Scripting
+               ========================================================================== */
+        /**
+             * Add the correct display in IE 9-.
+             */
+
+        canvas {
+            display: inline-block;
+        }
+        /**
+             * Add the correct display in IE.
+             */
+
+        template {
+            display: none;
+        }
+        /* Hidden
+               ========================================================================== */
+        /**
+             * Add the correct display in IE 10-.
+             */
+
+        [hidden] {
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MoGo</title>
+    <link rel="stylesheet" href="mogo.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header__wrapper">
+        <div class="header">
+            <div class="header__logo">MoGo</div>
+            <div class="header__menu">
+                <div class="header__menu_item">
+                    <a class="header__menu_item-link" href="#">ABOUT</a>
+                </div>
+                <div class="header__menu_item">
+                    <a class="header__menu_item-link" href="#">SERVICE</a>
+                </div>
+                <div class="header__menu_item">
+                    <a class="header__menu_item-link" href="#">WORK</a>
+                </div>
+                <div class="header__menu_item">
+                    <a class="header__menu_item-link" href="#">BLOG</a>
+                </div>
+                <div class="header__menu_item">
+                    <a class="header__menu_item-link" href="#">CONTACT</a>
+                </div>
+                <div class="header__menu_shop"></div>
+                <div class="header__menu_search"></div>
+            </div>
+        </div>
+    </div>
+    <div class="welcome__wrapper">
+        <div class="welcome">
+            <div class="welcome__paragraph">Creative Template</div>
+            <div class="welcome__caption">WELCOME TO MOGO</div>
+            <div class="welcome__line"></div>
+            <div class="welcome__button">
+                <input type="button" class="welcome__button_item" value="LEARN MORE">
+            </div>
+        </div>
+    </div>
+    <div class="aboutus__wrapper">
+        <div class="aboutus">
+            <div class="aboutus__text">
+                <div class="aboutus__text_paragraph">What we do</div>
+                <div class="aboutus__text_caption">STORY ABOUT US</div>
+                <div class="aboutus__text_line"></div>
+                <div class="aboutus__text_pr">Lorem ipsum sit amet, consectetur adipising elit, sed do eisumod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat</div>
+            </div>
+            <div class="aboutus__picture">
+                <div class="aboutus__picture_keybords"></div>
+                <div class="aboutus__picture_table"></div>
+                <div class="aboutus__picture_tree"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="facts__wrapper">
+        <div class="facts">
+            <div class="facts__block">
+                <div class="facts__block_number">42</div>
+                <div class="facts__block_name">WEB DESIGN PROJECTS</div>
+            </div>
+            <div class="facts__block">
+                <div class="facts__block_number">123</div>
+                <div class="facts__block_name">HAPPY CLIENT</div>
+            </div>
+            <div class="facts__block">
+                <div class="facts__block_number">15</div>
+                <div class="facts__block_name">AWARD WINNER</div>
+            </div>
+            <div class="facts__block">
+                <div class="facts__block_number">99</div>
+                <div class="facts__block_name">CUP OF COFFEE</div>
+            </div>
+            <div class="facts__block">
+                <div class="facts__block_number">24</div>
+                <div class="facts__block_name">MEMBERS</div>
+            </div>
+        </div>
+    </div>
+    <div class="amazing__wrapper">
+        <div class="amazing">
+            <div class="amazing__text">
+                <div class="amazing__text_paragraph">We work with</div>
+                <div class="amazing__text_caption">AMAZING SERVICES</div>
+                <div class="amazing__text_line"></div>
+            </div>
+            <div class="amazing__list">
+                <div class="amazing__list_item">
+                    <div class="amazing__list_item-photography"></div>
+                    <div class="amazing__list_item-aboutit">
+                        <div class="amazing__list_item-aboutit-caption">PHOTOGRAPHY</div>
+                        <div class="amazing__list_item-aboutit-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</div>
+                    </div>
+                </div>
+                <div class="amazing__list_item">
+                    <div class="amazing__list_item-web"></div>
+                    <div class="amazing__list_item-aboutit">
+                        <div class="amazing__list_item-aboutit-caption">WEB DESIGN</div>
+                        <div class="amazing__list_item-aboutit-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</div>
+                    </div>
+                </div>
+                <div class="amazing__list_item">
+                    <div class="amazing__list_item-creativity"></div>
+                    <div class="amazing__list_item-aboutit">
+                        <div class="amazing__list_item-aboutit-caption">CREATIVITY</div>
+                        <div class="amazing__list_item-aboutit-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</div>
+                    </div>
+                </div>
+                <div class="amazing__list_item">
+                    <div class="amazing__list_item-seo"></div>
+                    <div class="amazing__list_item-aboutit">
+                        <div class="amazing__list_item-aboutit-caption">SEO</div>
+                        <div class="amazing__list_item-aboutit-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</div>
+                    </div>
+                </div>
+                <div class="amazing__list_item">
+                    <div class="amazing__list_item-css"></div>
+                    <div class="amazing__list_item-aboutit">
+                        <div class="amazing__list_item-aboutit-caption">CSS/HTML</div>
+                        <div class="amazing__list_item-aboutit-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</div>
+                    </div>
+                </div>
+                <div class="amazing__list_item">
+                    <div class="amazing__list_item-digital"></div>
+                    <div class="amazing__list_item-aboutit">
+                        <div class="amazing__list_item-aboutit-caption">DIGITAL</div>
+                        <div class="amazing__list_item-aboutit-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature__wrapper">
+        <div class="feature">
+            <div class="feature__text">
+                <div class="feature__text_paragraph">For all devices</div>
+                <div class="feature__text_caption">UNIQUE DESIGN</div>
+                <div class="feature__text_line"></div>
+            </div>
+            <div class="feature__planshet">
+
+            </div>
+            <div class="feature__iphone">
+
+            </div>
+        </div>
+    </div>
+    <div class="service__wrapper">
+        <div class="service">
+            <div class="service__text">
+                <div class="service__text_paragraph">Service</div>
+                <div class="service__text_caption">WHAT WE DO</div>
+                <div class="service__text_line"></div>
+                <div class="service__text_pr">Lorem ipsum sit amet, consectetur adipising elit, sed do eisumod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat</div>
+            </div>
+            <div class="service__work">
+                <div class="service__work_picture"></div>
+                <div class="service__work_list">
+                    <div id="dd" class="service__work_list-item" tabindex="1">PHOTOGRAPGY
+                        <ul class="service__work_list-item-about">
+                            <li>Lorem ipsum sit amet, consectetur adipising elit, sed do eisumod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.Lorem ipsum sit amet, consectetur adipising elit, sed do eisumod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.Lorem ipsum sit amet, consectetur adipising elit, sed do eisumod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.Lorem ipsum sit amet, consectetur adipising elit, sed do eisumod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function DropDown(el) {
+            this.dd = el;
+            this.initEvents();
+        }
+        DropDown.prototype = {
+            initEvents: function () {
+                var obj = this;
+
+                obj.dd.on('click', function (event) {
+                    $(this).toggleClass('active');
+                    event.stopPropagation();
+                });
+            }
+        }
+
+        $(function () {
+
+            var dd = new DropDown($('#dd'));
+
+            $(document).click(function () {
+                // all dropdowns
+                $('.service__work_list-item').removeClass('active');
+            });
+
+        });
+    </script>
+</body>
+
+</html>

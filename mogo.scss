@@ -1,0 +1,602 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    min-height: 72px;
+    width: 1205px;
+    &__wrapper {
+        background: rgba(232, 132, 130, 0.2);
+        width: 100%;
+        min-height: 72px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 10;
+    }
+    &__logo {
+        width: 7%;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 52%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        &_item {
+            line-height: 30px;
+            &-link {
+                text-decoration: none;
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+            }
+            &-link:hover {
+                color: rgb(252, 227, 138);
+            }
+        }
+        &_item:hover {
+            border-bottom: 2px solid rgb(252, 227, 138);
+        }
+        &_shop {
+            background: url('shop.png') no-repeat;
+            width: 18px;
+            height: 14px;
+        }
+        &_search {
+            background: url('search.png') no-repeat;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 1000px;
+    width: 1205px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: url('banner.png') no-repeat;
+        width: 100%;
+        min-height: 1000px;
+        background-position: center;
+        background-size: cover;
+    }
+    &__paragraph {
+        text-align: center;
+        font-size: 72px;
+        font-family: 'Kaushan Script', cursive;
+        color: rgb(255, 255, 255);
+    }
+    &__caption {
+        text-align: center;
+        font-size: 150px;
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    &__line {
+        min-height: 50px;
+        width: 5%;
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+    &__button {
+        padding: 50px 0;
+        &_item {
+            min-height: 40px;
+            min-width: 160px;
+            background: none;
+            border: 3px solid white;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    min-height: 750px;
+    width: 1205px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 750px;
+    }
+    &__text {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+        &_pr {
+            padding: 40px 0;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(153, 153, 153);
+            text-align: center;
+            width: 80%
+        }
+    }
+    &__picture {
+        width: 1205px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: space-between;
+        &_keybords {
+            background: url('keybords.png') no-repeat;
+            height: 250px;
+            width: 380px;
+        }
+        &_table {
+            background: url('table.png') no-repeat;
+            height: 250px;
+            width: 380px;
+        }
+        &_tree {
+            background: url('tree.png') no-repeat;
+            height: 250px;
+            width: 380px;
+        }
+        &_table:hover {
+            background: url('user.png') no-repeat 50% 50%, url('superteam.png') no-repeat 50% 60%, url('tablehover.png') no-repeat;
+            box-shadow: 10px 10px rgba(149, 225, 221, 1);
+        }
+        &_keybords:hover {
+            background: url('user.png') no-repeat 50% 50%, url('superteam.png') no-repeat 50% 60%, url('keybordshover.png') no-repeat;
+            box-shadow: 10px 10px rgba(149, 225, 221, 1);
+        }
+        &_tree:hover {
+            background: url('user.png') no-repeat 50% 50%, url('superteam.png') no-repeat 50% 60%, url('treehover.png') no-repeat;
+            box-shadow: 10px 10px rgba(149, 225, 221, 1);
+        }
+    }
+}
+
+.facts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 1205px;
+    min-height: 270px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: rgb(149, 225, 211);
+        width: 100%;
+        min-height: 270px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        min-height: 270px;
+        width: 20%;
+        text-align: center;
+        border-right: 1px solid rgba($color: white, $alpha: 0.4);
+        &_number {
+            font-size: 72px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        &_name {
+            font-size: 14px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+    }
+    &__block:nth-child(1) {
+        border-left: 1px solid rgba($color: white, $alpha: 0.4);
+    }
+}
+
+.amazing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 650px;
+    width: 1205px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 650px;
+    }
+    &__text {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 320px;
+        &_item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 33%;
+            min-height: 160px;
+            &-photography {
+                background: url('photo.png') no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+            &-web {
+                background: url('web.png') no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+            &-creativity {
+                background: url('comp.png') no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+            &-seo {
+                background: url('book.png') no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+            &-css {
+                background: url('home.png') no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+            &-digital {
+                background: url('image.png') no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+            &-aboutit {
+                margin-left: 25px;
+                width: 80%;
+                &-caption {
+                    font-size: 14px;
+                    font-family: "Montserrat";
+                    color: rgb(51, 51, 51);
+                    font-weight: bold;
+                }
+                &-par {
+                    font-size: 15px;
+                    font-family: "Roboto";
+                    color: rgb(153, 153, 153);
+                }
+            }
+        }
+        &_item:nth-child(1),
+        &_item:nth-child(2),
+        &_item:nth-child(3) {
+            border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+        }
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    min-height: 853px;
+    width: 1205px;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: url('winter.png') no-repeat;
+        width: 100%;
+        min-height: 853px;
+        background-position: center;
+        background-size: cover;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+    }
+    &__planshet {
+        background: url('planshet.png') no-repeat;
+        height: 583px;
+        width: 477px;
+    }
+    &__iphone {
+        position: absolute;
+        background: url('iphone.png') no-repeat;
+        width: 274px;
+        height: 476px;
+        bottom: -90px;
+        right: 200px;
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 900px;
+    width: 1205px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 900px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+        &_pr {
+            padding: 30px 0;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(153, 153, 153);
+            text-align: center;
+            width: 80%
+        }
+    }
+    &__work {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 380px;
+        &_picture {
+            background: url('men.png') no-repeat;
+            width: 47%;
+            min-height: 380px;
+        }
+        &_list {
+            width: 47%;
+            min-height: 380px;
+            &-item {
+                position: relative;
+                width: 550px;
+                padding: 10px 15px;
+                background: #fff;
+                cursor: pointer;
+                outline: none;
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(51, 51, 51);
+                font-weight: bold;
+                border: 1px solid rgb(229, 229, 229);
+                &-about {
+                    overflow-x:hidden;
+                    max-height: 180px;
+                    overflow-y: auto;
+                    min-height: 100px;
+                    border: 1px solid rgb(229, 229, 229);
+                    position: absolute;
+                    top: 100%;
+                    width: 550px;
+                    left: -1px;
+                    right: 0px;
+                    background: white;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    -ms-transition: all 0.3s ease-out;
+                    -o-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
+                    list-style: none;
+                    opacity: 0;
+                    pointer-events: none;
+                }
+                &-about li {
+                    
+                    width: 530px;
+                    display: block;
+                    text-decoration: none;
+                    color: #333;
+                    padding: 10px;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    -ms-transition: all 0.3s ease-out;
+                    -o-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
+                }
+            }
+            &-item:after {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                margin-top: -3px;
+                border-width: 6px 6px 0 6px;
+                border-style: solid;
+                border-color: grey transparent;
+            }
+            &-item.active:after {
+                border-width: 0 6px 6px 6px;
+            }
+            &-item.active .service__work_list-item-about {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
