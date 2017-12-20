@@ -522,6 +522,9 @@
             width: 47%;
             min-height: 380px;
             &-item {
+                font-size: 14px;
+                font-family: "Montserrat";
+                color: rgb(51, 51, 51);
                 position: relative;
                 width: 550px;
                 padding: 10px 15px;
@@ -530,7 +533,7 @@
                 outline: none;
                 font-size: 14px;
                 font-family: "Montserrat";
-                color: rgb(51, 51, 51);
+                
                 font-weight: bold;
                 border: 1px solid rgb(229, 229, 229);
                 &-about {
@@ -555,11 +558,12 @@
                     pointer-events: none;
                 }
                 &-about li {
-                    
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
                     width: 530px;
                     display: block;
                     text-decoration: none;
-                    color: #333;
                     padding: 10px;
                     -webkit-transition: all 0.3s ease-out;
                     -moz-transition: all 0.3s ease-out;
@@ -581,9 +585,11 @@
                 border-color: grey transparent;
             }
             &-item.active:after {
+                
                 border-width: 0 6px 6px 6px;
             }
             &-item.active .service__work_list-item-about {
+                
                 opacity: 1;
                 pointer-events: auto;
             }
@@ -599,4 +605,1074 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+.quote{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 290px;
+    width: 1205px;
+    &__wrapper{
+        background: rgb(248, 248, 248);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 290px;
+    }
+    &__icon{
+        background: url('posts.png') no-repeat;
+        height: 150px;
+        width: 150px;
+    }
+    &__text{
+        margin-left: 40px; 
+        width: 63%;
+        &_pr{
+            font-size: 24px;
+                font-family: "Roboto";
+                color: rgb(153, 153, 153);
+                font-style: italic;
+        }
+        &_who{
+            margin:10px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            &-line{
+                border: 3px solid rgb(243, 129, 129);
+                width: 60px;  
+            }
+            &-name{
+                padding-left: 10px;
+                font-size: 24px;
+                font-family: 'Kaushan Script', cursive;
+                    color: rgb(51, 51, 51);
+            }
+        }
+    }
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    min-height: 1050px;
+    width: 1205px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 1060px;
+    }
+    &__text {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+        &_pr {
+            padding: 40px 0;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(153, 153, 153);
+            text-align: center;
+            width: 80%
+        }
+    }
+    &__picture {
+        width: 1205px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: space-between;
+        &_men {
+            min-height: 550px;
+            width: 380px;
+            &-dix{
+                position: relative;
+                background: url('dix.png') no-repeat;
+                height: 470px;
+                width: 380px;
+                
+                display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                &-share{
+                    background: rgb(252, 227, 138);
+                    height: 56px;
+                    width: 225px;
+                    z-index: 8;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: center;
+                    align-items: center;
+                    display: none;
+                    &-facebook{
+                        background: url('face1.png') no-repeat 50% 50%;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-twitter{
+                        background: url('twitter.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-penegru{
+                        background: url('penegru.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-instagram{
+                        background: url('insta.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                    }
+                    &-facebook:hover{
+                        background: url('face1.png') no-repeat 50% 50% rgb(243, 129, 129);
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+            }
+            &-dix:hover{
+                background: url('dixhover.png') no-repeat;
+                box-shadow: 10px 10px rgba(149, 225, 221, 1);
+            }
+            &-dix:hover &-dix-share{
+                display:flex;
+            }
+            &-text{
+                padding: 30px 0;
+                text-align: center;
+                &-name{
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-profesion{
+                    padding: 10px 0;
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                }
+            }
+            &-cambell{
+                background: url('cam.png') no-repeat;
+                height: 470px;
+                width: 380px;
+                display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                &-share{
+                    background: rgb(252, 227, 138);
+                    height: 56px;
+                    width: 225px;
+                    z-index: 8;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: center;
+                    align-items: center;
+                    display: none;
+                    &-facebook{
+                        background: url('face1.png') no-repeat 50% 50%;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-twitter{
+                        background: url('twitter.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-penegru{
+                        background: url('penegru.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-instagram{
+                        background: url('insta.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                    }
+                    &-facebook:hover{
+                        background: url('face1.png') no-repeat 50% 50% rgb(243, 129, 129);
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+            }
+            &-cambell:hover{
+                background: url('camhover.png') no-repeat;
+                box-shadow: 10px 10px rgba(149, 225, 221, 1);
+            }
+            &-cambell:hover &-cambell-share{
+                display:flex;
+            }
+            &-text{
+                padding: 30px 0;
+                text-align: center;
+                &-name{
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-profesion{
+                    padding: 10px 0;
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                }
+            }
+            &-fertic{
+                background: url('fertic.png') no-repeat;
+                height: 470px;
+                width: 380px;
+                display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                &-share{
+                    background: rgb(252, 227, 138);
+                    height: 56px;
+                    width: 225px;
+                    z-index: 8;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: center;
+                    align-items: center;
+                    display: none;
+                    &-facebook{
+                        background: url('face1.png') no-repeat 50% 50%;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-twitter{
+                        background: url('twitter.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-penegru{
+                        background: url('penegru.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                        border-right: 1px solid rgba(243, 129, 129,0.4);
+                    }
+                    &-instagram{
+                        background: url('insta.png') no-repeat;
+                        width: 56px;
+                        height: 56px;
+                    }
+                    &-facebook:hover{
+                        background: url('face1.png') no-repeat 50% 50% rgb(243, 129, 129);
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+            }
+            &-fertic:hover{
+                background: url('fertichover.png') no-repeat;
+                box-shadow: 10px 10px rgba(149, 225, 221, 1);
+            }
+            &-fertic:hover &-fertic-share{
+                display:flex;
+            }
+            &-text{
+                padding: 30px 0;
+                text-align: center;
+                &-name{
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-profesion{
+                    padding: 10px 0;
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                }
+            }
+        }
+
+    }
+}
+.logos{
+    background: url('logos.png') no-repeat;
+        width: 1205px;
+        min-height: 250px;
+        background-position: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center; 
+        background:rgb(248, 248, 248);
+        width: 100%;
+        min-height: 250px;
+    }
+}
+.work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 400px;
+    width: 1205px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 400px;
+    }
+    &__text {
+
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+        &_pr {
+            padding: 40px 0;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            color: rgb(153, 153, 153);
+            text-align: center;
+            width: 80%
+        }
+    }
+}
+.testimonial{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 290px;
+    width: 1205px;
+    &__wrapper{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 290px;
+    }
+    &__icon{
+        background: url('layer.png') no-repeat;
+        height: 210px;
+        width: 210px;
+    }
+    &__text{
+        margin-left: 40px; 
+        width: 63%;
+        &_pr{
+            font-size: 24px;
+                font-family: "Roboto";
+                color: rgb(153, 153, 153);
+                font-style: italic;
+        }
+        &_who{
+            margin:10px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            &-line{
+                border: 3px solid rgb(243, 129, 129);
+                width: 60px;  
+            }
+            &-name{
+                padding-left: 10px;
+                font-size: 24px;
+                font-family: 'Kaushan Script', cursive;
+                    color: rgb(51, 51, 51);
+            }
+        }
+    }
+}
+.clients {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    min-height: 830px;
+    width: 1205px;
+    &__wrapper {
+        background: url('wintermount.png') no-repeat;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 830px;
+        background-position: center;
+        background-size: cover;
+    }
+    &__text {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+    }
+    &__list{
+        padding: 0 30px;
+        width: 1205px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: center;
+        &_item{
+            margin: 30px 0;
+            width: 50%;
+            min-height: 50%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: center;
+            &-mat{
+                background: url('mat.png') no-repeat;
+                height: 110px;
+                width: 110px;
+            }
+            &-about{
+                padding-left: 30px;
+                width: 70%;
+                &-name{
+                    margin: 10px 0;
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-profesion{
+                    margin: 10px 0;
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(51, 51, 51);
+                        font-style: italic;
+                }
+                &-line{
+                    margin: 10px 0;
+                    border: 3px solid rgb(243, 129, 129);
+                    width: 60px;
+                }
+                &-pr{
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                }
+            }
+            &-nick{
+                background: url('nick.png') no-repeat;
+                height: 110px;
+                width: 110px;
+            }
+            &-jae{
+                background: url('jae.png') no-repeat;
+                height: 110px;
+                width: 110px;
+            }
+            &-mike{
+                background: url('mike.png') no-repeat;
+                height: 110px;
+                width: 110px;
+            }
+        }
+    }
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    min-height: 770px;
+    width: 1205px;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 770px;
+    }
+    &__text {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        &_paragraph {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Kaushan Script', cursive;
+            color: rgb(51, 51, 51);
+        }
+        &_caption {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(51, 51, 51);
+            font-weight: bold;
+        }
+        &_line {
+            margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+        }
+    }
+    &__example{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        align-items: space-between;
+        min-height: 400px;
+        width: 100%;
+        &_item{
+            width: 31%;
+            min-height: 400px;
+            &-girl{
+                background: url('girl.png') no-repeat;
+                width: 100%;
+                height: 240px;
+            }
+            &-about{
+                min-height: 160px;
+                width: 100%;
+                &-name{
+                    margin: 20px 0;
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-pr{
+                    -ms-word-break: break-all;
+                    word-break: break-word;
+                    word-wrap: break-word;
+                    min-height: 40px;
+                    width: 90%;
+                    font-size: 15px;
+                    font-family: "Roboto";
+                    color: rgb(153, 153, 153);
+ 
+                }
+                &-line{
+                    margin: 10px 0;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+                }
+                &-icon{
+                    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: center;
+                    &-view{
+                        background: url('view.png') no-repeat;
+                        width: 20px;
+                        height: 11px;
+                    }
+                    &-number1{
+                        padding-left:5px;
+                        font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                    }
+                    &-speech{
+                        margin-left: 20px;
+                        background: url('speech.png') no-repeat;
+                        width: 16px;
+                        height: 14px;
+                    }
+                    &-number2{
+                        padding-left:5px;
+                        font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        &_item{
+            width: 31%;
+            min-height: 400px;
+            &-coffe{
+                background: url('coffe.png') no-repeat;
+                width: 100%;
+                height: 240px;
+            }
+            &-about{
+                min-height: 160px;
+                width: 100%;
+                &-name{
+                    margin: 20px 0;
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-pr{
+                    -ms-word-break: break-all;
+                    word-break: break-word;
+                    word-wrap: break-word;
+                    min-height: 40px;
+                    width: 90%;
+                    font-size: 15px;
+                    font-family: "Roboto";
+                    color: rgb(153, 153, 153);
+ 
+                }
+                &-line{
+                    margin: 10px 0;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+                }
+                &-icon{
+                    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: center;
+                    &-view{
+                        background: url('view.png') no-repeat;
+                        width: 20px;
+                        height: 11px;
+                    }
+                    &-number1{
+                        padding-left:5px;
+                        font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                    }
+                    &-speech{
+                        margin-left: 20px;
+                        background: url('speech.png') no-repeat;
+                        width: 16px;
+                        height: 14px;
+                    }
+                    &-number2{
+                        padding-left:5px;
+                        font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        &_item{
+            width: 31%;
+            min-height: 400px;
+            &-pen{
+                background: url('pen.png') no-repeat;
+                width: 100%;
+                height: 240px;
+            }
+            &-about{
+                min-height: 160px;
+                width: 100%;
+                &-name{
+                    margin: 20px 0;
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-pr{
+                    -ms-word-break: break-all;
+                    word-break: break-word;
+                    word-wrap: break-word;
+                    min-height: 40px;
+                    width: 90%;
+                    font-size: 15px;
+                    font-family: "Roboto";
+                    color: rgb(153, 153, 153);
+ 
+                }
+                &-line{
+                    margin: 10px 0;
+                    width: 100%;
+                    border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+                }
+                &-icon{
+                    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: center;
+                    &-view{
+                        background: url('view.png') no-repeat;
+                        width: 20px;
+                        height: 11px;
+                    }
+                    &-number1{
+                        padding-left:5px;
+                        font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                    }
+                    &-speech{
+                        margin-left: 20px;
+                        background: url('speech.png') no-repeat;
+                        width: 16px;
+                        height: 14px;
+                    }
+                    &-number2{
+                        padding-left:5px;
+                        font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    &__wrapper{
+        background: url('map.png') no-repeat;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+    &__pin{
+        background: url('pin.png') no-repeat;
+        width: 20px;
+        height: 26px;
+    }
+    &__open{
+        margin: 20px 0;
+        font-size: 24px;
+            font-family: "Montserrat";
+            color: rgb(243, 129, 129);
+            font-weight: bold;
+            text-transform: uppercase;
+    }
+    &__line{
+        margin: 10px 0;
+            border: 3px solid rgb(243, 129, 129);
+            width: 60px;
+    }
+}
+.footer{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center; 
+        width: 1205px;
+        min-height: 500px;
+    &__wrapper{
+        background: rgb(248, 248, 248);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center; 
+        width: 100%;
+        min-height: 500px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start; 
+        width: 100%;
+        min-height: 356px;
+        &_mogo{
+            width: 42%;
+            &-caption{
+                font-size: 24px;
+                    font-family: "Montserrat";
+                    color: rgb(204, 204, 204);
+                    font-weight: bold;
+                    line-height: 1.2; 
+            }
+            &-pr{
+                margin: 40px 0;
+                font-size: 15px;
+                    font-family: "Roboto";
+                    color: rgb(153, 153, 153);
+                    line-height: 1.6;
+            }
+            &-followers{
+                display: inline-block;
+                
+                &-number{
+                    display: inline-block;
+                    font-size: 18px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+                }
+                &-word{
+                    display: inline-block;
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        color: rgb(51, 51, 51);
+                        font-weight: bold;
+
+                }
+            }
+            &-line{
+                margin: 20px 0;
+                border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+            }
+            &-icon{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                align-items: flex-start; 
+                &-name{
+                    font-size: 15px;
+                        font-family: "Roboto";
+                        color: rgb(153, 153, 153);
+                        font-style: italic;
+                }
+                &-picture{
+                    margin-left: 20px;
+                    width: 200px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center; 
+                    &-facebook{
+                        background: url('facebook.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 15px;
+                    }
+                    &-twitter{
+                        background: url('twitter2.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 15px;
+                    }
+                    &-instagram{
+                        background: url('instagram.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 15px;
+                    }
+                    &-pito{
+                        background: url('pito.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 17px;
+                    }
+                    &-gmail{
+                        background: url('gmail.png') no-repeat 50% 50%;
+                        width: 20px;;
+                        height: 15px;
+                    }
+                    &-youtube{
+                        background: url('youtube.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 15px;
+                    }
+                    &-ball{
+                        background: url('drible.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 16px;
+                    }
+                    &-tumber{
+                        background: url('tumber.png') no-repeat 50% 50%;
+                        width: 20px;
+                        height: 17px;
+                    }
+                }
+            }
+            &-form{
+
+                margin-top: 40px;
+                min-height: 40px;
+                &-email{
+                    min-height: 40px;
+                    width: 43%;
+                    border: 1px solid rgba(153, 153, 153, 0.4);
+                    padding: 0 10px;
+
+                }
+                &-button{
+                    background: rgb(149, 225, 211);
+                    color: white; 
+                    border: none;
+                    min-height: 40px;
+                    font-size: 14px;
+                        font-family: "Montserrat";
+                        font-weight: bold;
+                        min-width: 30%;
+                        cursor: pointer;    
+                }
+            }
+        }
+    }
 }
