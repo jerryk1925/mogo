@@ -24,6 +24,7 @@
 }
 
 .header__logo {
+  margin-left: 30px;
   width: 7%;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
@@ -32,6 +33,7 @@
 }
 
 .header__menu {
+  margin-right: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1787,6 +1789,7 @@
 .footer__list_mogo-line {
   margin: 20px 0;
   border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  width: 95%;
 }
 
 .footer__list_mogo-icon {
@@ -1886,4 +1889,187 @@
   font-weight: bold;
   min-width: 30%;
   cursor: pointer;
+}
+
+.footer__list_blogs {
+  width: 35%;
+}
+
+.footer__list_blogs-name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.footer__list_blogs-item {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+}
+
+.footer__list_blogs-item-candel {
+  background: url("candel.png") no-repeat;
+  width: 120px;
+  height: 80px;
+}
+
+.footer__list_blogs-item-about {
+  margin-left: 20px;
+  width: 66%;
+}
+
+.footer__list_blogs-item-about-pr {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+}
+
+.footer__list_blogs-item-about-data {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+}
+
+.footer__list_blogs-item-sky {
+  background: url("skyy.png") no-repeat;
+  width: 120px;
+  height: 80px;
+}
+
+.footer__list_blogs-item-about {
+  margin-left: 20px;
+  width: 66%;
+}
+
+.footer__list_blogs-item-about-pr {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+}
+
+.footer__list_blogs-item-about-data {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+}
+
+.footer__list_blogs-item-gitara {
+  background: url("gitara.png") no-repeat;
+  width: 120px;
+  height: 80px;
+}
+
+.footer__list_blogs-item-about {
+  margin-left: 20px;
+  width: 66%;
+}
+
+.footer__list_blogs-item-about-pr {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+}
+
+.footer__list_blogs-item-about-data {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+}
+
+.footer__list_instagram {
+  width: 23%;
+}
+
+.footer__list_instagram-name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+}
+
+.footer__list_instagram-gallary {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-start;
+  min-height: 268px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(1) {
+  background: url("picture1.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(2) {
+  background: url("picture2.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(3) {
+  background: url("picture3.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(4) {
+  background: url("picture4.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(5) {
+  background: url("picture5.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(6) {
+  background: url("picture6.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(7) {
+  background: url("picture7.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(8) {
+  background: url("picture8.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-gallary-picture:nth-child(9) {
+  background: url("picture9.png") no-repeat;
+  width: 88px;
+  height: 88px;
+}
+
+.footer__list_instagram-end {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #333333;
+  font-style: italic;
 }
