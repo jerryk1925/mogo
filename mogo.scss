@@ -6,7 +6,7 @@
     align-content: center;
     align-items: center;
     min-height: 72px;
-    width: 1205px;
+    width: 100%;
     &__wrapper {
         background: rgba(232, 132, 130, 0.2);
         width: 100%;
@@ -48,12 +48,13 @@
                 color: rgb(255, 255, 255);
                 font-weight: bold;
             }
-            &-link:hover {
-                color: rgb(252, 227, 138);
-            }
+           
         }
         &_item:hover {
             border-bottom: 2px solid rgb(252, 227, 138);
+        }
+        &_item:hover &_item-link{
+            color: rgb(252, 227, 138);
         }
         &_shop {
             background: url('shop.png') no-repeat;
@@ -69,7 +70,7 @@
 }
 
 .welcome {
-    
+    margin:  0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -77,7 +78,7 @@
     align-content: center;
     align-items: center;
     min-height: 1000px;
-    width: 1205px;
+    width: 100%;
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -85,7 +86,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        background: url('banner.png') no-repeat;
+        background: url('welcome/banner.jpg') no-repeat;
         width: 100%;
         min-height: 1000px;
         background-position: center;
@@ -93,14 +94,14 @@
     }
     &__paragraph {
         text-align: center;
-        font-size: 72px;
+        font-size: 68px;
         font-family: 'Kaushan Script', cursive;
         color: rgb(255, 255, 255);
        
     }
     &__caption {
         text-align: center;
-        font-size: 150px;
+        font-size: 80px;
         font-family: 'Montserrat', sans-serif;
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -125,6 +126,7 @@
 }
 
 .aboutus {
+    margin:  0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -132,7 +134,10 @@
     align-content: center;
     align-items: center;
     min-height: 750px;
-    width: 1205px;
+    width: 100%;
+    @media only screen and (max-width: 479px) {
+        min-height: 1200px;
+    }
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -142,6 +147,9 @@
         align-items: center;
         width: 100%;
         min-height: 750px;
+        @media only screen and (max-width: 479px) {
+            min-height: 1200px;
+        }
     }
     &__text {
         min-height: 200px;
@@ -180,52 +188,61 @@
         }
     }
     &__picture {
-        width: 1205px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-content: flex-start;
-        align-items: space-between;
+        align-content: space-between;
+        align-items: center;
+        @media only screen and (max-width: 479px) {
+            min-height: 800px;
+            justify-content: center;
+        }
         &_keybords {
-            background: url('keybords.png') no-repeat;
+            background: url('aboutus/keybords.jpg') no-repeat;
             height: 250px;
             width: 380px;
+            
         }
         &_table {
-            background: url('table.png') no-repeat;
+            background: url('aboutus/table.jpg') no-repeat;
             height: 250px;
             width: 380px;
+            
         }
         &_tree {
-            background: url('tree.png') no-repeat;
+            background: url('aboutus/tree.jpg') no-repeat;
             height: 250px;
             width: 380px;
+           
         }
         &_table:hover {
-            background: url('user.png') no-repeat 50% 50%, url('superteam.png') no-repeat 50% 60%, url('tablehover.png') no-repeat;
+            background: url('aboutus/user.png') no-repeat 50% 50%, url('aboutus/superteam.png') no-repeat 50% 60%, url('aboutus/tablehover.jpg') no-repeat;
             box-shadow: 10px 10px rgba(149, 225, 221, 1);
         }
         &_keybords:hover {
-            background: url('user.png') no-repeat 50% 50%, url('superteam.png') no-repeat 50% 60%, url('keybordshover.png') no-repeat;
+            background: url('aboutus/user.png') no-repeat 50% 50%, url('aboutus/superteam.png') no-repeat 50% 60%, url('aboutus/keybordshover.jpg') no-repeat;
             box-shadow: 10px 10px rgba(149, 225, 221, 1);
         }
         &_tree:hover {
-            background: url('user.png') no-repeat 50% 50%, url('superteam.png') no-repeat 50% 60%, url('treehover.png') no-repeat;
+            background: url('aboutus/user.png') no-repeat 50% 50%, url('aboutus/superteam.png') no-repeat 50% 60%, url('aboutus/treehover.jpg') no-repeat;
             box-shadow: 10px 10px rgba(149, 225, 221, 1);
         }
     }
 }
 
 .facts {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 1205px;
+    width: 100%;
     min-height: 270px;
+    
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -253,6 +270,9 @@
             font-family: "Montserrat";
             color: rgb(255, 255, 255);
             font-weight: bold;
+            @media only screen and (max-width: 479px) {
+                font-size: 48px;
+            }
         }
         &_name {
             font-size: 14px;
@@ -261,6 +281,9 @@
             text-transform: uppercase;
             line-height: 1.2;
             font-weight: bold;
+            @media only screen and (max-width: 479px) {
+                font-size: 12px;
+            }
         }
     }
     &__block:nth-child(1) {
@@ -269,6 +292,7 @@
 }
 
 .amazing {
+    margin:  0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -276,7 +300,7 @@
     align-content: center;
     align-items: center;
     min-height: 650px;
-    width: 1205px;
+    width: 100%;
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -334,32 +358,32 @@
             width: 33%;
             min-height: 160px;
             &-photography {
-                background: url('photo.png') no-repeat;
+                background: url('amazing/photo.png') no-repeat;
                 width: 32px;
                 height: 32px;
             }
             &-web {
-                background: url('web.png') no-repeat;
+                background: url('amazing/web.png') no-repeat;
                 width: 32px;
                 height: 32px;
             }
             &-creativity {
-                background: url('comp.png') no-repeat;
+                background: url('amazing/comp.png') no-repeat;
                 width: 32px;
                 height: 32px;
             }
             &-seo {
-                background: url('book.png') no-repeat;
+                background: url('amazing/book.png') no-repeat;
                 width: 32px;
                 height: 32px;
             }
             &-css {
-                background: url('home.png') no-repeat;
+                background: url('amazing/home.png') no-repeat;
                 width: 32px;
                 height: 32px;
             }
             &-digital {
-                background: url('image.png') no-repeat;
+                background: url('amazing/image.png') no-repeat;
                 width: 32px;
                 height: 32px;
             }
@@ -388,6 +412,7 @@
 }
 
 .feature {
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -395,7 +420,7 @@
     align-content: center;
     align-items: center;
     min-height: 853px;
-    width: 1205px;
+    width: 100%;
     position: relative;
     &__wrapper {
         display: flex;
@@ -404,7 +429,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        background: url('winter.png') no-repeat;
+        background: url('feature/winter.jpg') no-repeat;
         width: 100%;
         min-height: 853px;
         background-position: center;
@@ -439,13 +464,13 @@
         }
     }
     &__planshet {
-        background: url('planshet.png') no-repeat;
+        background: url('feature/planshet.png') no-repeat;
         height: 583px;
         width: 477px;
     }
     &__iphone {
         position: absolute;
-        background: url('iphone.png') no-repeat;
+        background: url('feature/iphone.png') no-repeat;
         width: 274px;
         height: 476px;
         bottom: -90px;
@@ -454,6 +479,7 @@
 }
 
 .service {
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -461,7 +487,11 @@
     align-content: center;
     align-items: center;
     min-height: 900px;
-    width: 1205px;
+    width: 100%;
+    @media only screen and (max-width: 479px) {
+        min-height: 1200px;
+    }
+    
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -471,6 +501,9 @@
         align-items: center;
         width: 100%;
         min-height: 900px;
+        @media only screen and (max-width: 479px) {
+            min-height: 1200px;
+        }
     }
     &__text {
         display: flex;
@@ -513,18 +546,28 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-content: flex-start;
+        align-content: center;
         align-items: flex-start;
         width: 100%;
         min-height: 380px;
+        @media only screen and (max-width: 479px) {
+            min-height: 500px;
+        }
         &_picture {
-            background: url('men.png') no-repeat;
+            background: url('service/men.jpg') no-repeat;
             width: 47%;
             min-height: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
         }
         &_list {
+            margin-top:10px;
             width: 47%;
             border-bottom: solid 1px #c4c4c4;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
             &-name{
                 font-size: 14px;
                 font-weight: bold;
@@ -549,9 +592,9 @@
         
         &_list p{
             font-size: 15px;
-                font-family: "Roboto";
-                color: rgb(153, 153, 153);
-                font-style: italic;
+            font-family: "Roboto";
+            color: rgb(153, 153, 153);
+            font-style: italic;
             border-top: 1px solid rgba(153, 153, 153, 0.4);
             background: white;
             margin: 0;
@@ -573,6 +616,7 @@
     margin: 0;
 }
 .quote{
+   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -580,7 +624,7 @@
     align-content: center;
     align-items: center;
     min-height: 290px;
-    width: 1205px;
+    width: 100%;
     &__wrapper{
         background: rgb(248, 248, 248);
         display: flex;
@@ -596,6 +640,11 @@
         background: url('posts.png') no-repeat;
         height: 150px;
         width: 150px;
+        @media only screen and (max-width: 479px) {
+            background: url('posts.png') no-repeat 50% 50%;
+            background-size: 60%
+        }
+        
     }
     &__text{
         margin-left: 40px; 
@@ -628,6 +677,7 @@
     }
 }
 .team {
+    margin: 20px 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -635,7 +685,11 @@
     align-content: center;
     align-items: center;
     min-height: 1050px;
-    width: 1205px;
+    width: 100%;
+    @media only screen and (max-width: 479px) {
+        min-height: 1100px;
+      
+    }
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -644,7 +698,11 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        min-height: 1060px;
+        min-height: 1050px;
+        @media only screen and (max-width: 479px) {
+            min-height: 1100px;
+          
+        }
     }
     &__text {
         min-height: 200px;
@@ -683,19 +741,23 @@
         }
     }
     &__picture {
-        width: 1205px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: flex-start;
         align-items: space-between;
+        @media only screen and (max-width: 479px) {
+
+            justify-content: center;
+        }
         &_men {
             min-height: 550px;
             width: 380px;
             &-dix{
                 position: relative;
-                background: url('dix.png') no-repeat;
+                background: url('team/dix.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
                 
@@ -718,37 +780,37 @@
                     align-items: center;
                     display: none;
                     &-facebook{
-                        background: url('face1.png') no-repeat 50% 50%;
+                        background: url('team/face1.png') no-repeat 50% 50%;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-twitter{
-                        background: url('twitter.png') no-repeat;
+                        background: url('team/twitter.png') no-repeat;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-penegru{
-                        background: url('penegru.png') no-repeat;
+                        background: url('team/penegru.png') no-repeat;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-instagram{
-                        background: url('insta.png') no-repeat;
+                        background: url('team/insta.png') no-repeat;
                         width: 56px;
                         height: 56px;
                     }
                     &-facebook:hover{
-                        background: url('face1.png') no-repeat 50% 50% rgb(243, 129, 129);
+                        background: url('team/face1.png') no-repeat 50% 50% rgb(243, 129, 129);
                         width: 56px;
                         height: 56px;
                     }
                 }
             }
             &-dix:hover{
-                background: url('dixhover.png') no-repeat;
+                background: url('team/dixhover.jpg') no-repeat;
                 box-shadow: 10px 10px rgba(149, 225, 221, 1);
             }
             &-dix:hover &-dix-share{
@@ -772,7 +834,7 @@
                 }
             }
             &-cambell{
-                background: url('cam.png') no-repeat;
+                background: url('team/cam.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
                 display: flex;
@@ -794,37 +856,37 @@
                     align-items: center;
                     display: none;
                     &-facebook{
-                        background: url('face1.png') no-repeat 50% 50%;
+                        background: url('team/face1.png') no-repeat 50% 50%;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-twitter{
-                        background: url('twitter.png') no-repeat;
+                        background: url('team/twitter.png') no-repeat;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-penegru{
-                        background: url('penegru.png') no-repeat;
+                        background: url('team/penegru.png') no-repeat;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-instagram{
-                        background: url('insta.png') no-repeat;
+                        background: url('team/insta.png') no-repeat;
                         width: 56px;
                         height: 56px;
                     }
                     &-facebook:hover{
-                        background: url('face1.png') no-repeat 50% 50% rgb(243, 129, 129);
+                        background: url('team/face1.png') no-repeat 50% 50% rgb(243, 129, 129);
                         width: 56px;
                         height: 56px;
                     }
                 }
             }
             &-cambell:hover{
-                background: url('camhover.png') no-repeat;
+                background: url('team/camhover.jpg') no-repeat;
                 box-shadow: 10px 10px rgba(149, 225, 221, 1);
             }
             &-cambell:hover &-cambell-share{
@@ -848,7 +910,7 @@
                 }
             }
             &-fertic{
-                background: url('fertic.png') no-repeat;
+                background: url('team/fertic.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
                 display: flex;
@@ -870,37 +932,37 @@
                     align-items: center;
                     display: none;
                     &-facebook{
-                        background: url('face1.png') no-repeat 50% 50%;
+                        background: url('team/face1.png') no-repeat 50% 50%;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-twitter{
-                        background: url('twitter.png') no-repeat;
+                        background: url('team/twitter.png') no-repeat;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-penegru{
-                        background: url('penegru.png') no-repeat;
+                        background: url('team/penegru.png') no-repeat;
                         width: 56px;
                         height: 56px;
                         border-right: 1px solid rgba(243, 129, 129,0.4);
                     }
                     &-instagram{
-                        background: url('insta.png') no-repeat;
+                        background: url('team/insta.png') no-repeat;
                         width: 56px;
                         height: 56px;
                     }
                     &-facebook:hover{
-                        background: url('face1.png') no-repeat 50% 50% rgb(243, 129, 129);
+                        background: url('team/face1.png') no-repeat 50% 50% rgb(243, 129, 129);
                         width: 56px;
                         height: 56px;
                     }
                 }
             }
             &-fertic:hover{
-                background: url('fertichover.png') no-repeat;
+                background: url('team/fertichover.jpg') no-repeat;
                 box-shadow: 10px 10px rgba(149, 225, 221, 1);
             }
             &-fertic:hover &-fertic-share{
@@ -928,8 +990,9 @@
     }
 }
 .logos{
-    background: url('logos.png') no-repeat;
-        width: 1205px;
+    margin: 0 30px;
+    background: url('logo/logos.jpg') no-repeat;
+        width: 100%;
         min-height: 250px;
         background-position: center;
     &__wrapper{
@@ -945,14 +1008,19 @@
     }
 }
 .work {
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    min-height: 400px;
-    width: 1205px;
+    min-height: 1200px;
+    width: 100%;
+
+    @media only screen and (max-width: 479px) {
+        min-height: 500px;
+    }
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -961,10 +1029,12 @@
         align-content: center;
         align-items: center;
         width: 100%;
-        min-height: 400px;
+        min-height: 1200px;
+        @media only screen and (max-width: 479px) {
+            min-height: 500px;
+        }
     }
     &__text {
-
         min-height: 200px;
         display: flex;
         flex-direction: column;
@@ -1000,9 +1070,120 @@
             width: 80%
         }
     }
+    &__example{
+        min-height: 780px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        @media only screen and (max-width: 479px) {
+            min-height: 300px;
+            justify-content: center;
+        }
+        &_bestmen{
+            background: url('work/bestmen.jpg') no-repeat;
+            width: 33%;
+            min-height: 390px;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+                min-height: 100px;
+                
+            }
+        }
+        &_house{
+            background: url('work/hourse.jpg') no-repeat;
+            width: 33%;
+            min-height: 390px;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+                min-height: 100px;
+            }
+        }
+        &_groof{
+            background: url('work/groof.jpg') no-repeat;
+            width: 33%;
+            min-height: 390px;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+                min-height: 100px;
+            }
+        }
+        &_most{
+            background: url('work/most.jpg') no-repeat;
+            width: 33%;
+            min-height: 390px;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+                min-height: 100px;
+            }
+        }
+        &_library{
+            background: url('work/library.jpg') no-repeat;
+            width: 33%;
+            min-height: 390px;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+                min-height: 100px;
+            }
+        }
+        &_sky{
+            background: url('work/sky.jpg') no-repeat;
+            width: 33%;
+            min-height: 390px;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+                min-height: 100px;
+            }
+        }
+        &_bestmen:hover{
+            background: url('work/bestmenhover.jpg') no-repeat;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+            }
+            
+        }
+        &_house:hover{
+            background: url('work/hoursehover.jpg') no-repeat;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+            }
+            
+        }
+        &_groof:hover{
+            background: url('work/groofhover.jpg') no-repeat;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+            }
+            
+        }
+        &_most:hover{
+            background: url('work/mosthover.jpg') no-repeat;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+            }
+           
+        }
+        &_library:hover{
+            background: url('work/libraryhover.jpg') no-repeat;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+            }
+
+        }
+        &_sky:hover{
+            background: url('work/skyhover.jpg') no-repeat;
+            @media only screen and (max-width: 479px) {
+                background-size: 100px;
+            }
+            
+        }
+        
+    }
 }
 .testimonial{
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1010,7 +1191,7 @@
     align-content: center;
     align-items: center;
     min-height: 290px;
-    width: 1205px;
+    width: 100%;
     &__wrapper{
         
         display: flex;
@@ -1026,6 +1207,10 @@
         background: url('layer.png') no-repeat;
         height: 210px;
         width: 210px;
+        @media only screen and (max-width: 479px) {
+            background: url('layer.png') no-repeat 50% 50%;
+            background-size: 60%
+        }
     }
     &__text{
         margin-left: 40px; 
@@ -1058,6 +1243,7 @@
     }
 }
 .clients {
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1065,7 +1251,7 @@
     align-content: center;
     align-items: center;
     min-height: 830px;
-    width: 1205px;
+    width: 100%;
     &__wrapper {
         background: url('wintermount.png') no-repeat;
         display: flex;
@@ -1108,8 +1294,8 @@
         }
     }
     &__list{
-        padding: 0 30px;
-        width: 1205px;
+        
+        width: 100%;
         min-height: 400px;
         display: flex;
         flex-direction: row;
@@ -1128,7 +1314,7 @@
             align-content: flex-start;
             align-items: center;
             &-mat{
-                background: url('mat.png') no-repeat;
+                background: url('clients/mat.png') no-repeat;
                 height: 110px;
                 width: 110px;
             }
@@ -1161,17 +1347,17 @@
                 }
             }
             &-nick{
-                background: url('nick.png') no-repeat;
+                background: url('clients/nick.png') no-repeat;
                 height: 110px;
                 width: 110px;
             }
             &-jae{
-                background: url('jae.png') no-repeat;
+                background: url('clients/jae.png') no-repeat;
                 height: 110px;
                 width: 110px;
             }
             &-mike{
-                background: url('mike.png') no-repeat;
+                background: url('clients/mike.png') no-repeat;
                 height: 110px;
                 width: 110px;
             }
@@ -1179,6 +1365,7 @@
     }
 }
 .blog{
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1186,7 +1373,7 @@
     align-content: center;
     align-items: center;
     min-height: 770px;
-    width: 1205px;
+    width: 100%;
     &__wrapper{
         display: flex;
         flex-direction: row;
@@ -1237,10 +1424,16 @@
         &_item{
             width: 31%;
             min-height: 400px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                justify-content: center;
+               
+            }
             &-girl{
-                background: url('girl.png') no-repeat;
+                background: url('blog/girl.png') no-repeat;
                 width: 100%;
                 height: 240px;
+                
             }
             &-about{
                 min-height: 160px;
@@ -1276,7 +1469,7 @@
         align-content: flex-start;
         align-items: center;
                     &-view{
-                        background: url('view.png') no-repeat;
+                        background: url('blog/view.png') no-repeat;
                         width: 20px;
                         height: 11px;
                     }
@@ -1289,7 +1482,7 @@
                     }
                     &-speech{
                         margin-left: 20px;
-                        background: url('speech.png') no-repeat;
+                        background: url('blog/speech.png') no-repeat;
                         width: 16px;
                         height: 14px;
                     }
@@ -1306,8 +1499,13 @@
         &_item{
             width: 31%;
             min-height: 400px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                justify-content: center;
+               
+            }
             &-coffe{
-                background: url('coffe.png') no-repeat;
+                background: url('blog/coffe.png') no-repeat;
                 width: 100%;
                 height: 240px;
             }
@@ -1345,7 +1543,7 @@
         align-content: flex-start;
         align-items: center;
                     &-view{
-                        background: url('view.png') no-repeat;
+                        background: url('blog/view.png') no-repeat;
                         width: 20px;
                         height: 11px;
                     }
@@ -1358,7 +1556,7 @@
                     }
                     &-speech{
                         margin-left: 20px;
-                        background: url('speech.png') no-repeat;
+                        background: url('blog/speech.png') no-repeat;
                         width: 16px;
                         height: 14px;
                     }
@@ -1375,8 +1573,13 @@
         &_item{
             width: 31%;
             min-height: 400px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                justify-content: center;
+               
+            }
             &-pen{
-                background: url('pen.png') no-repeat;
+                background: url('blog/pen.png') no-repeat;
                 width: 100%;
                 height: 240px;
             }
@@ -1414,7 +1617,7 @@
         align-content: flex-start;
         align-items: center;
                     &-view{
-                        background: url('view.png') no-repeat;
+                        background: url('blog/view.png') no-repeat;
                         width: 20px;
                         height: 11px;
                     }
@@ -1427,7 +1630,7 @@
                     }
                     &-speech{
                         margin-left: 20px;
-                        background: url('speech.png') no-repeat;
+                        background: url('blog/speech.png') no-repeat;
                         width: 16px;
                         height: 14px;
                     }
@@ -1444,6 +1647,7 @@
     }
 }
 .map{
+    margin: 0 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1453,7 +1657,7 @@
     width: 100%;
     min-height: 200px;
     &__wrapper{
-        background: url('map.png') no-repeat;
+        background: url('map/map.jpg') no-repeat;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1466,7 +1670,7 @@
         background-size: cover;
     }
     &__pin{
-        background: url('pin.png') no-repeat;
+        background: url('map/pin.png') no-repeat;
         width: 20px;
         height: 26px;
     }
@@ -1485,13 +1689,14 @@
     }
 }
 .footer{
+    margin: 0 30px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         align-items: center; 
-        width: 1205px;
+        width: 100%;
         min-height: 500px;
     &__wrapper{
         background: rgb(248, 248, 248);
@@ -1515,6 +1720,10 @@
         min-height: 356px;
         &_mogo{
             width: 42%;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                margin: 10px 0;
+            }
             &-caption{
                 font-size: 24px;
                     font-family: "Montserrat";
@@ -1576,42 +1785,42 @@
                     align-content: center;
                     align-items: center; 
                     &-facebook{
-                        background: url('facebook.png') no-repeat 50% 50%;
+                        background: url('footer/facebook.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 15px;
                     }
                     &-twitter{
-                        background: url('twitter2.png') no-repeat 50% 50%;
+                        background: url('footer/twitter2.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 15px;
                     }
                     &-instagram{
-                        background: url('instagram.png') no-repeat 50% 50%;
+                        background: url('footer/instagram.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 15px;
                     }
                     &-pito{
-                        background: url('pito.png') no-repeat 50% 50%;
+                        background: url('footer/pito.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 17px;
                     }
                     &-gmail{
-                        background: url('gmail.png') no-repeat 50% 50%;
+                        background: url('footer/gmail.png') no-repeat 50% 50%;
                         width: 20px;;
                         height: 15px;
                     }
                     &-youtube{
-                        background: url('youtube.png') no-repeat 50% 50%;
+                        background: url('footer/youtube.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 15px;
                     }
                     &-ball{
-                        background: url('drible.png') no-repeat 50% 50%;
+                        background: url('footer/drible.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 16px;
                     }
                     &-tumber{
-                        background: url('tumber.png') no-repeat 50% 50%;
+                        background: url('footer/tumber.png') no-repeat 50% 50%;
                         width: 20px;
                         height: 17px;
                     }
@@ -1643,6 +1852,11 @@
         }
         &_blogs{
             width: 35%;
+            width: 42%;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                margin: 10px 0;
+            }
             &-name{
                 font-size: 14px;
                 font-family: "Montserrat";
@@ -1661,7 +1875,7 @@
                 width: 100%;
                 min-height: 80px;
                 &-candel{
-                    background: url('candel.png') no-repeat;
+                    background: url('footer/candel.png') no-repeat;
                     width: 120px;
                     height: 80px;
                 }
@@ -1682,7 +1896,7 @@
                     }
                 }
                 &-sky{
-                    background: url('skyy.png') no-repeat;
+                    background: url('footer/skyy.png') no-repeat;
                     width: 120px;
                     height: 80px;
                 }
@@ -1703,7 +1917,7 @@
                     }
                 }
                 &-gitara{
-                    background: url('gitara.png') no-repeat;
+                    background: url('footer/gitara.png') no-repeat;
                     width: 120px;
                     height: 80px;
                 }
@@ -1727,6 +1941,10 @@
         }
         &_instagram{
             width: 23%;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                margin: 10px 0;
+            }
             &-name{
                 font-size: 14px;
                 font-family: "Montserrat";
@@ -1743,48 +1961,53 @@
                 align-content: space-between;
                 align-items: flex-start; 
                 min-height: 268px;
+                @media only screen and (max-width: 479px) {
+                    width: 75%;
+                    min-height: 300px;
+                    
+                }
                 &-picture:nth-child(1){
-                    background: url('picture1.png') no-repeat;
+                    background: url('footer/picture1.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(2){
-                    background: url('picture2.png') no-repeat;
+                    background: url('footer/picture2.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(3){
-                    background: url('picture3.png') no-repeat;
+                    background: url('footer/picture3.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(4){
-                    background: url('picture4.png') no-repeat;
+                    background: url('footer/picture4.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(5){
-                    background: url('picture5.png') no-repeat;
+                    background: url('footer/picture5.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(6){
-                    background: url('picture6.png') no-repeat;
+                    background: url('footer/picture6.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(7){
-                    background: url('picture7.png') no-repeat;
+                    background: url('footer/picture7.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(8){
-                    background: url('picture8.png') no-repeat;
+                    background: url('footer/picture8.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
                 &-picture:nth-child(9){
-                    background: url('picture9.png') no-repeat;
+                    background: url('footer/picture9.png') no-repeat;
                     width: 88px;
                     height: 88px;
                 }
