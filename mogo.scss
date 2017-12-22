@@ -97,6 +97,9 @@
         font-size: 68px;
         font-family: 'Kaushan Script', cursive;
         color: rgb(255, 255, 255);
+        @media only screen and (max-width: 479px) {
+            font-size: 48px;
+        }
        
     }
     &__caption {
@@ -105,6 +108,9 @@
         font-family: 'Montserrat', sans-serif;
         color: rgb(255, 255, 255);
         font-weight: bold;
+        @media only screen and (max-width: 479px) {
+            font-size: 62px;
+        }
     }
     &__line {
         min-height: 50px;
@@ -203,18 +209,27 @@
             background: url('aboutus/keybords.jpg') no-repeat;
             height: 250px;
             width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
             
         }
         &_table {
             background: url('aboutus/table.jpg') no-repeat;
             height: 250px;
             width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
             
         }
         &_tree {
             background: url('aboutus/tree.jpg') no-repeat;
             height: 250px;
             width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
            
         }
         &_table:hover {
@@ -271,7 +286,7 @@
             color: rgb(255, 255, 255);
             font-weight: bold;
             @media only screen and (max-width: 479px) {
-                font-size: 48px;
+                font-size: 44px;
             }
         }
         &_name {
@@ -282,7 +297,7 @@
             line-height: 1.2;
             font-weight: bold;
             @media only screen and (max-width: 479px) {
-                font-size: 12px;
+                font-size: 10px;
             }
         }
     }
@@ -357,6 +372,9 @@
             align-items: center;
             width: 33%;
             min-height: 160px;
+            @media only screen and (max-width: 479px) {
+                width: 45%;
+            }
             &-photography {
                 background: url('amazing/photo.png') no-repeat;
                 width: 32px;
@@ -408,6 +426,15 @@
         &_item:nth-child(3) {
             border-bottom: 1px solid rgba(153, 153, 153, 0.4);
         }
+        &_item:nth-child(4) {
+            border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+            border: none;
+            @media only screen and (max-width: 479px) {
+                border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+            }
+        }
+        
+
     }
 }
 
@@ -422,6 +449,9 @@
     min-height: 853px;
     width: 100%;
     position: relative;
+    @media only screen and (max-width: 479px) {
+        min-height: 600px;
+    }
     &__wrapper {
         display: flex;
         flex-direction: row;
@@ -434,6 +464,9 @@
         min-height: 853px;
         background-position: center;
         background-size: cover;
+        @media only screen and (max-width: 479px) {
+            min-height: 600px;
+        }
     }
     &__text {
         display: flex;
@@ -467,6 +500,12 @@
         background: url('feature/planshet.png') no-repeat;
         height: 583px;
         width: 477px;
+        @media only screen and (max-width: 479px) {
+            background: url('feature/planshet.png') no-repeat 50% 100%;
+            background-size: 100% ;
+            height: 400px;
+            width: 100%;
+        }
     }
     &__iphone {
         position: absolute;
@@ -475,6 +514,11 @@
         height: 476px;
         bottom: -90px;
         right: 200px;
+        @media only screen and (max-width: 479px) {
+            right: 0;
+            background: url('feature/iphone.png') no-repeat 50% 100%;
+            background-size: 50% ;
+        }
     }
 }
 
@@ -551,16 +595,20 @@
         width: 100%;
         min-height: 380px;
         @media only screen and (max-width: 479px) {
-            min-height: 500px;
+            min-height: 300px;
         }
+        
         &_picture {
             background: url('service/men.jpg') no-repeat;
             width: 47%;
             min-height: 380px;
             @media only screen and (max-width: 479px) {
                 width: 100%;
+                background: url('service/men.jpg') no-repeat  50% ;
+                background-size: 150%;
             }
         }
+       
         &_list {
             margin-top:10px;
             width: 47%;
@@ -755,11 +803,17 @@
         &_men {
             min-height: 550px;
             width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
             &-dix{
                 position: relative;
                 background: url('team/dix.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
                 
                 display: flex;
                     flex-direction: row;
@@ -837,6 +891,9 @@
                 background: url('team/cam.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
                 display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -913,6 +970,9 @@
                 background: url('team/fertic.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
                 display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -990,7 +1050,6 @@
     }
 }
 .logos{
-    margin: 0 30px;
     background: url('logo/logos.jpg') no-repeat;
         width: 100%;
         min-height: 250px;
@@ -1252,6 +1311,7 @@
     align-items: center;
     min-height: 830px;
     width: 100%;
+
     &__wrapper {
         background: url('wintermount.png') no-repeat;
         display: flex;
@@ -1303,6 +1363,7 @@
         justify-content: flex-start;
         align-content: flex-start;
         align-items: center;
+        
         &_item{
             margin: 30px 0;
             width: 50%;
@@ -1313,6 +1374,11 @@
             justify-content: flex-start;
             align-content: flex-start;
             align-items: center;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+                justify-content: center;
+                
+            }
             &-mat{
                 background: url('clients/mat.png') no-repeat;
                 height: 110px;
@@ -1874,19 +1940,34 @@
                 align-items: center; 
                 width: 100%;
                 min-height: 80px;
+                @media only screen and (max-width: 479px) {
+                    align-items: flex-start;
+                }
+               
                 &-candel{
                     background: url('footer/candel.png') no-repeat;
                     width: 120px;
                     height: 80px;
+                    @media only screen and (max-width: 479px) {
+                        background-size: 90%;
+                        width: 80px;
+                        height: 80px;
+                    }
+                    
                 }
                 &-about{
                     margin-left: 20px;
                     width: 66%;
+                    @media only screen and (max-width: 479px) {
+                        margin:none;
+                        width: 60%;
+                    }
                     &-pr{
                         font-size: 12px;
                         font-family: "Montserrat";
                         color: rgb(51, 51, 51);
                         font-weight: bold;
+                        
                     }
                     &-data{
                         font-size: 13px;
@@ -1899,6 +1980,11 @@
                     background: url('footer/skyy.png') no-repeat;
                     width: 120px;
                     height: 80px;
+                    @media only screen and (max-width: 479px) {
+                        background-size: 90%;
+                        width: 80px;
+                        height: 80px;
+                    }
                 }
                 &-about{
                     margin-left: 20px;
@@ -1920,6 +2006,11 @@
                     background: url('footer/gitara.png') no-repeat;
                     width: 120px;
                     height: 80px;
+                    @media only screen and (max-width: 479px) {
+                        background-size: 90%;
+                        width: 80px;
+                        height: 80px;
+                    }
                 }
                 &-about{
                     margin-left: 20px;
@@ -1962,7 +2053,7 @@
                 align-items: flex-start; 
                 min-height: 268px;
                 @media only screen and (max-width: 479px) {
-                    width: 75%;
+                    width: 90%;
                     min-height: 300px;
                     
                 }

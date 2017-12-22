@@ -110,12 +110,24 @@
   color: white;
 }
 
+@media only screen and (max-width: 479px) {
+  .welcome__paragraph {
+    font-size: 48px;
+  }
+}
+
 .welcome__caption {
   text-align: center;
   font-size: 80px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 479px) {
+  .welcome__caption {
+    font-size: 62px;
+  }
 }
 
 .welcome__line {
@@ -237,16 +249,34 @@
   width: 380px;
 }
 
+@media only screen and (max-width: 479px) {
+  .aboutus__picture_keybords {
+    width: 100%;
+  }
+}
+
 .aboutus__picture_table {
   background: url("aboutus/table.jpg") no-repeat;
   height: 250px;
   width: 380px;
 }
 
+@media only screen and (max-width: 479px) {
+  .aboutus__picture_table {
+    width: 100%;
+  }
+}
+
 .aboutus__picture_tree {
   background: url("aboutus/tree.jpg") no-repeat;
   height: 250px;
   width: 380px;
+}
+
+@media only screen and (max-width: 479px) {
+  .aboutus__picture_tree {
+    width: 100%;
+  }
 }
 
 .aboutus__picture_table:hover {
@@ -309,7 +339,7 @@
 
 @media only screen and (max-width: 479px) {
   .facts__block_number {
-    font-size: 48px;
+    font-size: 44px;
   }
 }
 
@@ -324,7 +354,7 @@
 
 @media only screen and (max-width: 479px) {
   .facts__block_name {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -409,6 +439,12 @@
   min-height: 160px;
 }
 
+@media only screen and (max-width: 479px) {
+  .amazing__list_item {
+    width: 45%;
+  }
+}
+
 .amazing__list_item-photography {
   background: url("amazing/photo.png") no-repeat;
   width: 32px;
@@ -467,6 +503,17 @@
   border-bottom: 1px solid rgba(153, 153, 153, 0.4);
 }
 
+.amazing__list_item:nth-child(4) {
+  border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  border: none;
+}
+
+@media only screen and (max-width: 479px) {
+  .amazing__list_item:nth-child(4) {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+  }
+}
+
 .feature {
   margin: 0 30px;
   display: flex;
@@ -478,6 +525,12 @@
   min-height: 853px;
   width: 100%;
   position: relative;
+}
+
+@media only screen and (max-width: 479px) {
+  .feature {
+    min-height: 600px;
+  }
 }
 
 .feature__wrapper {
@@ -492,6 +545,12 @@
   min-height: 853px;
   background-position: center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 479px) {
+  .feature__wrapper {
+    min-height: 600px;
+  }
 }
 
 .feature__text {
@@ -532,6 +591,15 @@
   width: 477px;
 }
 
+@media only screen and (max-width: 479px) {
+  .feature__planshet {
+    background: url("feature/planshet.png") no-repeat 50% 100%;
+    background-size: 100%;
+    height: 400px;
+    width: 100%;
+  }
+}
+
 .feature__iphone {
   position: absolute;
   background: url("feature/iphone.png") no-repeat;
@@ -539,6 +607,14 @@
   height: 476px;
   bottom: -90px;
   right: 200px;
+}
+
+@media only screen and (max-width: 479px) {
+  .feature__iphone {
+    right: 0;
+    background: url("feature/iphone.png") no-repeat 50% 100%;
+    background-size: 50%;
+  }
 }
 
 .service {
@@ -630,7 +706,7 @@
 
 @media only screen and (max-width: 479px) {
   .service__work {
-    min-height: 500px;
+    min-height: 300px;
   }
 }
 
@@ -643,6 +719,8 @@
 @media only screen and (max-width: 479px) {
   .service__work_picture {
     width: 100%;
+    background: url("service/men.jpg") no-repeat 50%;
+    background-size: 150%;
   }
 }
 
@@ -870,6 +948,12 @@
   width: 380px;
 }
 
+@media only screen and (max-width: 479px) {
+  .team__picture_men {
+    width: 100%;
+  }
+}
+
 .team__picture_men-dix {
   position: relative;
   background: url("team/dix.jpg") no-repeat;
@@ -881,6 +965,12 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 479px) {
+  .team__picture_men-dix {
+    width: 100%;
+  }
 }
 
 .team__picture_men-dix-share {
@@ -971,6 +1061,12 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 479px) {
+  .team__picture_men-cambell {
+    width: 100%;
+  }
+}
+
 .team__picture_men-cambell-share {
   background: #fce38a;
   height: 56px;
@@ -1059,6 +1155,12 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 479px) {
+  .team__picture_men-fertic {
+    width: 100%;
+  }
+}
+
 .team__picture_men-fertic-share {
   background: #fce38a;
   height: 56px;
@@ -1136,7 +1238,6 @@
 }
 
 .logos {
-  margin: 0 30px;
   background: url("logo/logos.jpg") no-repeat;
   width: 100%;
   min-height: 250px;
@@ -1535,6 +1636,13 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
+}
+
+@media only screen and (max-width: 479px) {
+  .clients__list_item {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .clients__list_item-mat {
@@ -2183,15 +2291,36 @@
   min-height: 80px;
 }
 
+@media only screen and (max-width: 479px) {
+  .footer__list_blogs-item {
+    align-items: flex-start;
+  }
+}
+
 .footer__list_blogs-item-candel {
   background: url("footer/candel.png") no-repeat;
   width: 120px;
   height: 80px;
 }
 
+@media only screen and (max-width: 479px) {
+  .footer__list_blogs-item-candel {
+    background-size: 90%;
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .footer__list_blogs-item-about {
   margin-left: 20px;
   width: 66%;
+}
+
+@media only screen and (max-width: 479px) {
+  .footer__list_blogs-item-about {
+    margin: none;
+    width: 60%;
+  }
 }
 
 .footer__list_blogs-item-about-pr {
@@ -2212,6 +2341,14 @@
   background: url("footer/skyy.png") no-repeat;
   width: 120px;
   height: 80px;
+}
+
+@media only screen and (max-width: 479px) {
+  .footer__list_blogs-item-sky {
+    background-size: 90%;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .footer__list_blogs-item-about {
@@ -2237,6 +2374,14 @@
   background: url("footer/gitara.png") no-repeat;
   width: 120px;
   height: 80px;
+}
+
+@media only screen and (max-width: 479px) {
+  .footer__list_blogs-item-gitara {
+    background-size: 90%;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .footer__list_blogs-item-about {
@@ -2290,7 +2435,7 @@
 
 @media only screen and (max-width: 479px) {
   .footer__list_instagram-gallary {
-    width: 75%;
+    width: 90%;
     min-height: 300px;
   }
 }
