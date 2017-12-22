@@ -574,8 +574,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   min-height: 380px;
 }
@@ -588,82 +588,42 @@
 
 .service__work_list {
   width: 47%;
-  min-height: 380px;
+  border-bottom: solid 1px #c4c4c4;
 }
 
-.service__work_list-item {
+.service__work_list-name {
   font-size: 14px;
+  font-weight: bold;
   font-family: "Montserrat";
   color: #333333;
-  position: relative;
-  width: 550px;
-  padding: 10px 15px;
-  background: #fff;
+  background: white url(arrow-square.gif) no-repeat right -51px;
+  padding: 7px 15px;
+  margin: 0;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+  border-bottom: none;
   cursor: pointer;
-  outline: none;
-  font-size: 14px;
-  font-family: "Montserrat";
-  font-weight: bold;
-  border: 1px solid #e5e5e5;
 }
 
-.service__work_list-item-about {
-  overflow-x: hidden;
-  max-height: 180px;
-  overflow-y: auto;
-  min-height: 100px;
-  border: 1px solid #e5e5e5;
-  position: absolute;
-  top: 100%;
-  width: 550px;
-  left: -1px;
-  right: 0px;
-  background: white;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  list-style: none;
-  opacity: 0;
-  pointer-events: none;
+.service__work_list-name:hover {
+  background-color: #e3e2e2;
 }
 
-.service__work_list-item-about li {
+.service__work_list-name:active {
+  background-position: right 5px;
+}
+
+.service__work_list p {
   font-size: 15px;
   font-family: "Roboto";
   color: #999999;
-  width: 530px;
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.service__work_list-item:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  margin-top: -3px;
-  border-width: 6px 6px 0 6px;
-  border-style: solid;
-  border-color: grey transparent;
-}
-
-.service__work_list-item.active:after {
-  border-width: 0 6px 6px 6px;
-}
-
-.service__work_list-item.active .service__work_list-item-about {
-  opacity: 1;
-  pointer-events: auto;
+  font-style: italic;
+  border-top: 1px solid rgba(153, 153, 153, 0.4);
+  background: white;
+  margin: 0;
+  padding: 10px 15px 20px;
+  border-left: 1px solid rgba(153, 153, 153, 0.4);
+  border-right: 1px solid rgba(153, 153, 153, 0.4);
+  display: none;
 }
 
 *,
