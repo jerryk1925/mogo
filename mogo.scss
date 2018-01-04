@@ -212,6 +212,42 @@
             @media only screen and (max-width: 479px) {
                 width: 100%;
             }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;  
+                opacity: 0;              
+                &-user{
+                    background: url('aboutus/user.png') no-repeat;
+                    width: 32px;
+                    height: 23px;
+                    z-index: 25;
+                }
+                &-team{
+                    margin-top:10px;
+                    background: url('aboutus/superteam.png') no-repeat;
+                    width: 119px;
+                    height: 15px;
+                }
+            }
             
         }
         &_table {
@@ -221,7 +257,30 @@
             @media only screen and (max-width: 479px) {
                 width: 100%;
             }
-            
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;  
+                opacity: 0;              
+                &-user{
+                    background: url('aboutus/user.png') no-repeat;
+                    width: 32px;
+                    height: 23px;
+                    z-index: 25;
+                }
+                &-team{
+                    margin-top:10px;
+                    background: url('aboutus/superteam.png') no-repeat;
+                    width: 119px;
+                    height: 15px;
+                }
+            }
         }
         &_tree {
             background: url('aboutus/tree.jpg') no-repeat;
@@ -230,19 +289,51 @@
             @media only screen and (max-width: 479px) {
                 width: 100%;
             }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;  
+                opacity: 0;              
+                &-user{
+                    background: url('aboutus/user.png') no-repeat;
+                    width: 32px;
+                    height: 23px;
+                    z-index: 25;
+                }
+                &-team{
+                    margin-top:10px;
+                    background: url('aboutus/superteam.png') no-repeat;
+                    width: 119px;
+                    height: 15px;
+                }
+            }
            
         }
         &_table:hover {
-            background: url('aboutus/user.png') no-repeat 50% 50%, url('aboutus/superteam.png') no-repeat 50% 60%, url('aboutus/tablehover.jpg') no-repeat;
             box-shadow: 10px 10px rgba(149, 225, 221, 1);
+        }
+        &_table:hover &_table-background{
+            opacity: 1;
         }
         &_keybords:hover {
-            background: url('aboutus/user.png') no-repeat 50% 50%, url('aboutus/superteam.png') no-repeat 50% 60%, url('aboutus/keybordshover.jpg') no-repeat;
+    
             box-shadow: 10px 10px rgba(149, 225, 221, 1);
         }
+        &_keybords:hover &_keybords-background{
+            opacity: 1;
+        }
         &_tree:hover {
-            background: url('aboutus/user.png') no-repeat 50% 50%, url('aboutus/superteam.png') no-repeat 50% 60%, url('aboutus/treehover.jpg') no-repeat;
+            
             box-shadow: 10px 10px rgba(149, 225, 221, 1);
+        }
+        &_tree:hover &_tree-background{
+            opacity: 1;
         }
     }
 }
@@ -811,16 +902,29 @@
                 background: url('team/dix.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
             @media only screen and (max-width: 479px) {
                 width: 100%;
-            }
+            }   
+                &-background{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                opacity: 0;
+                }
                 
-                display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
+               
                 &-share{
                     background: rgb(252, 227, 138);
                     height: 56px;
@@ -864,8 +968,12 @@
                 }
             }
             &-dix:hover{
-                background: url('team/dixhover.jpg') no-repeat;
+                
                 box-shadow: 10px 10px rgba(149, 225, 221, 1);
+            }
+            &-dix:hover &-dix-background{
+                opacity: 1;
+               
             }
             &-dix:hover &-dix-share{
                 display:flex;
@@ -891,20 +999,33 @@
                 background: url('team/cam.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
-            @media only screen and (max-width: 479px) {
-                width: 100%;
-            }
                 display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
+                &-background{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                opacity: 0;
+                }
+                
                 &-share{
                     background: rgb(252, 227, 138);
                     height: 56px;
                     width: 225px;
-                    z-index: 8;
+                    z-index: 20;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -943,8 +1064,11 @@
                 }
             }
             &-cambell:hover{
-                background: url('team/camhover.jpg') no-repeat;
+                
                 box-shadow: 10px 10px rgba(149, 225, 221, 1);
+            }
+            &-cambell:hover &-cambell-background{
+                opacity: 1;
             }
             &-cambell:hover &-cambell-share{
                 display:flex;
@@ -970,15 +1094,28 @@
                 background: url('team/fertic.jpg') no-repeat;
                 height: 470px;
                 width: 380px;
-            @media only screen and (max-width: 479px) {
-                width: 100%;
-            }
                 display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+            @media only screen and (max-width: 479px) {
+                width: 100%;
+            }
+                &-background{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                opacity: 0;
+                }
+                
                 &-share{
                     background: rgb(252, 227, 138);
                     height: 56px;
@@ -1022,8 +1159,10 @@
                 }
             }
             &-fertic:hover{
-                background: url('team/fertichover.jpg') no-repeat;
                 box-shadow: 10px 10px rgba(149, 225, 221, 1);
+            }
+            &-fertic:hover &-fertic-background{
+                opacity: 1;
             }
             &-fertic:hover &-fertic-share{
                 display:flex;
@@ -1151,6 +1290,15 @@
                 min-height: 100px;
                 
             }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                min-height: 390px;
+                opacity: 0;
+                @media only screen and (max-width: 479px) {
+                 min-height: 81px;
+                }
+            }
         }
         &_house{
             background: url('work/hourse.jpg') no-repeat;
@@ -1159,6 +1307,15 @@
             @media only screen and (max-width: 479px) {
                 background-size: 100px;
                 min-height: 100px;
+            }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                min-height: 390px;
+                opacity: 0;
+                @media only screen and (max-width: 479px) {
+                    min-height: 81px;
+                   }
             }
         }
         &_groof{
@@ -1169,6 +1326,15 @@
                 background-size: 100px;
                 min-height: 100px;
             }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                min-height: 390px;
+                opacity: 0;
+                @media only screen and (max-width: 479px) {
+                    min-height: 81px;
+                   }
+            }
         }
         &_most{
             background: url('work/most.jpg') no-repeat;
@@ -1177,6 +1343,15 @@
             @media only screen and (max-width: 479px) {
                 background-size: 100px;
                 min-height: 100px;
+            }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                min-height: 390px;
+                opacity: 0;
+                @media only screen and (max-width: 479px) {
+                    min-height: 81px;
+                   }
             }
         }
         &_library{
@@ -1187,6 +1362,15 @@
                 background-size: 100px;
                 min-height: 100px;
             }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                min-height: 390px;
+                opacity: 0;
+                @media only screen and (max-width: 479px) {
+                    min-height: 81px;
+                   }
+            }
         }
         &_sky{
             background: url('work/sky.jpg') no-repeat;
@@ -1196,48 +1380,57 @@
                 background-size: 100px;
                 min-height: 100px;
             }
+            &-background{
+                background: linear-gradient(to bottom, rgba(234,138,137,0.9) 0%,rgba(236,156,139,0.9) 26%,rgba(240,210,143,0.9) 75%,rgba(242,227,145,0.9) 100%);
+                width: 100%;
+                min-height: 390px;
+                opacity: 0;
+                @media only screen and (max-width: 479px) {
+                    min-height: 81px;
+                   }
+            }
         }
-        &_bestmen:hover{
-            background: url('work/bestmenhover.jpg') no-repeat;
-            @media only screen and (max-width: 479px) {
-                background-size: 100px;
+        
+        &_bestmen:hover &_bestmen-background{
+           opacity: 1; 
+           @media only screen and (max-width: 479px) {
+            background-size: 100px;
+            }    
+        }
+        &_house:hover  &_house-background{
+            opacity: 1; 
+           @media only screen and (max-width: 479px) {
+            background-size: 100px;
             }
             
         }
-        &_house:hover{
-            background: url('work/hoursehover.jpg') no-repeat;
-            @media only screen and (max-width: 479px) {
-                background-size: 100px;
+        &_groof:hover  &_groof-background{
+            opacity: 1; 
+           @media only screen and (max-width: 479px) {
+            background-size: 100px;
             }
             
         }
-        &_groof:hover{
-            background: url('work/groofhover.jpg') no-repeat;
-            @media only screen and (max-width: 479px) {
-                background-size: 100px;
-            }
-            
-        }
-        &_most:hover{
-            background: url('work/mosthover.jpg') no-repeat;
-            @media only screen and (max-width: 479px) {
-                background-size: 100px;
+        &_most:hover &_most-background{
+            opacity: 1; 
+           @media only screen and (max-width: 479px) {
+            background-size: 100px;
             }
            
         }
-        &_library:hover{
-            background: url('work/libraryhover.jpg') no-repeat;
-            @media only screen and (max-width: 479px) {
-                background-size: 100px;
+        &_library:hover &_library-background{
+            opacity: 1; 
+           @media only screen and (max-width: 479px) {
+            background-size: 100px;
             }
 
         }
-        &_sky:hover{
-            background: url('work/skyhover.jpg') no-repeat;
-            @media only screen and (max-width: 479px) {
-                background-size: 100px;
+        &_sky:hover &_sky-background{
+            opacity: 1; 
+           @media only screen and (max-width: 479px) {
+            background-size: 100px;
             }
-            
+
         }
         
     }

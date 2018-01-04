@@ -255,6 +255,46 @@
   }
 }
 
+.aboutus__picture_keybords-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.aboutus__picture_keybords-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.aboutus__picture_keybords-background-user {
+  background: url("aboutus/user.png") no-repeat;
+  width: 32px;
+  height: 23px;
+  z-index: 25;
+}
+
+.aboutus__picture_keybords-background-team {
+  margin-top: 10px;
+  background: url("aboutus/superteam.png") no-repeat;
+  width: 119px;
+  height: 15px;
+}
+
 .aboutus__picture_table {
   background: url("aboutus/table.jpg") no-repeat;
   height: 250px;
@@ -265,6 +305,33 @@
   .aboutus__picture_table {
     width: 100%;
   }
+}
+
+.aboutus__picture_table-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.aboutus__picture_table-background-user {
+  background: url("aboutus/user.png") no-repeat;
+  width: 32px;
+  height: 23px;
+  z-index: 25;
+}
+
+.aboutus__picture_table-background-team {
+  margin-top: 10px;
+  background: url("aboutus/superteam.png") no-repeat;
+  width: 119px;
+  height: 15px;
 }
 
 .aboutus__picture_tree {
@@ -279,19 +346,55 @@
   }
 }
 
+.aboutus__picture_tree-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.aboutus__picture_tree-background-user {
+  background: url("aboutus/user.png") no-repeat;
+  width: 32px;
+  height: 23px;
+  z-index: 25;
+}
+
+.aboutus__picture_tree-background-team {
+  margin-top: 10px;
+  background: url("aboutus/superteam.png") no-repeat;
+  width: 119px;
+  height: 15px;
+}
+
 .aboutus__picture_table:hover {
-  background: url("aboutus/user.png") no-repeat 50% 50%, url("aboutus/superteam.png") no-repeat 50% 60%, url("aboutus/tablehover.jpg") no-repeat;
   box-shadow: 10px 10px #95e1dd;
+}
+
+.aboutus__picture_table:hover .aboutus__picture_table-background {
+  opacity: 1;
 }
 
 .aboutus__picture_keybords:hover {
-  background: url("aboutus/user.png") no-repeat 50% 50%, url("aboutus/superteam.png") no-repeat 50% 60%, url("aboutus/keybordshover.jpg") no-repeat;
   box-shadow: 10px 10px #95e1dd;
 }
 
+.aboutus__picture_keybords:hover .aboutus__picture_keybords-background {
+  opacity: 1;
+}
+
 .aboutus__picture_tree:hover {
-  background: url("aboutus/user.png") no-repeat 50% 50%, url("aboutus/superteam.png") no-repeat 50% 60%, url("aboutus/treehover.jpg") no-repeat;
   box-shadow: 10px 10px #95e1dd;
+}
+
+.aboutus__picture_tree:hover .aboutus__picture_tree-background {
+  opacity: 1;
 }
 
 .facts {
@@ -973,6 +1076,19 @@
   }
 }
 
+.team__picture_men-dix-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  opacity: 0;
+}
+
 .team__picture_men-dix-share {
   background: #fce38a;
   height: 56px;
@@ -1021,8 +1137,11 @@
 }
 
 .team__picture_men-dix:hover {
-  background: url("team/dixhover.jpg") no-repeat;
   box-shadow: 10px 10px #95e1dd;
+}
+
+.team__picture_men-dix:hover .team__picture_men-dix-background {
+  opacity: 1;
 }
 
 .team__picture_men-dix:hover .team__picture_men-dix-share {
@@ -1067,11 +1186,24 @@
   }
 }
 
+.team__picture_men-cambell-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  opacity: 0;
+}
+
 .team__picture_men-cambell-share {
   background: #fce38a;
   height: 56px;
   width: 225px;
-  z-index: 8;
+  z-index: 20;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1115,8 +1247,11 @@
 }
 
 .team__picture_men-cambell:hover {
-  background: url("team/camhover.jpg") no-repeat;
   box-shadow: 10px 10px #95e1dd;
+}
+
+.team__picture_men-cambell:hover .team__picture_men-cambell-background {
+  opacity: 1;
 }
 
 .team__picture_men-cambell:hover .team__picture_men-cambell-share {
@@ -1159,6 +1294,19 @@
   .team__picture_men-fertic {
     width: 100%;
   }
+}
+
+.team__picture_men-fertic-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  opacity: 0;
 }
 
 .team__picture_men-fertic-share {
@@ -1209,8 +1357,11 @@
 }
 
 .team__picture_men-fertic:hover {
-  background: url("team/fertichover.jpg") no-repeat;
   box-shadow: 10px 10px #95e1dd;
+}
+
+.team__picture_men-fertic:hover .team__picture_men-fertic-background {
+  opacity: 1;
 }
 
 .team__picture_men-fertic:hover .team__picture_men-fertic-share {
@@ -1363,6 +1514,19 @@
   }
 }
 
+.work__example_bestmen-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  min-height: 390px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .work__example_bestmen-background {
+    min-height: 81px;
+  }
+}
+
 .work__example_house {
   background: url("work/hourse.jpg") no-repeat;
   width: 33%;
@@ -1373,6 +1537,19 @@
   .work__example_house {
     background-size: 100px;
     min-height: 100px;
+  }
+}
+
+.work__example_house-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  min-height: 390px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .work__example_house-background {
+    min-height: 81px;
   }
 }
 
@@ -1389,6 +1566,19 @@
   }
 }
 
+.work__example_groof-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  min-height: 390px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .work__example_groof-background {
+    min-height: 81px;
+  }
+}
+
 .work__example_most {
   background: url("work/most.jpg") no-repeat;
   width: 33%;
@@ -1399,6 +1589,19 @@
   .work__example_most {
     background-size: 100px;
     min-height: 100px;
+  }
+}
+
+.work__example_most-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  min-height: 390px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .work__example_most-background {
+    min-height: 81px;
   }
 }
 
@@ -1415,6 +1618,19 @@
   }
 }
 
+.work__example_library-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  min-height: 390px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  .work__example_library-background {
+    min-height: 81px;
+  }
+}
+
 .work__example_sky {
   background: url("work/sky.jpg") no-repeat;
   width: 33%;
@@ -1428,62 +1644,75 @@
   }
 }
 
-.work__example_bestmen:hover {
-  background: url("work/bestmenhover.jpg") no-repeat;
+.work__example_sky-background {
+  background: linear-gradient(to bottom, rgba(234, 138, 137, 0.9) 0%, rgba(236, 156, 139, 0.9) 26%, rgba(240, 210, 143, 0.9) 75%, rgba(242, 227, 145, 0.9) 100%);
+  width: 100%;
+  min-height: 390px;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 479px) {
-  .work__example_bestmen:hover {
+  .work__example_sky-background {
+    min-height: 81px;
+  }
+}
+
+.work__example_bestmen:hover .work__example_bestmen-background {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 479px) {
+  .work__example_bestmen:hover .work__example_bestmen-background {
     background-size: 100px;
   }
 }
 
-.work__example_house:hover {
-  background: url("work/hoursehover.jpg") no-repeat;
+.work__example_house:hover .work__example_house-background {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 479px) {
-  .work__example_house:hover {
+  .work__example_house:hover .work__example_house-background {
     background-size: 100px;
   }
 }
 
-.work__example_groof:hover {
-  background: url("work/groofhover.jpg") no-repeat;
+.work__example_groof:hover .work__example_groof-background {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 479px) {
-  .work__example_groof:hover {
+  .work__example_groof:hover .work__example_groof-background {
     background-size: 100px;
   }
 }
 
-.work__example_most:hover {
-  background: url("work/mosthover.jpg") no-repeat;
+.work__example_most:hover .work__example_most-background {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 479px) {
-  .work__example_most:hover {
+  .work__example_most:hover .work__example_most-background {
     background-size: 100px;
   }
 }
 
-.work__example_library:hover {
-  background: url("work/libraryhover.jpg") no-repeat;
+.work__example_library:hover .work__example_library-background {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 479px) {
-  .work__example_library:hover {
+  .work__example_library:hover .work__example_library-background {
     background-size: 100px;
   }
 }
 
-.work__example_sky:hover {
-  background: url("work/skyhover.jpg") no-repeat;
+.work__example_sky:hover .work__example_sky-background {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 479px) {
-  .work__example_sky:hover {
+  .work__example_sky:hover .work__example_sky-background {
     background-size: 100px;
   }
 }
