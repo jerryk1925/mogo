@@ -467,21 +467,21 @@
     <div class="header__wrapper">
         <div class="header">
             <div class="header__logo">MoGo</div>
-            <div class="header__menu">
+            <div class="header__menu" id="menu">
                 <div class="header__menu_item">
-                    <a class="header__menu_item-link" href="#">ABOUT</a>
+                    <a class="header__menu_item-link" href="#about">ABOUT</a>
                 </div>
                 <div class="header__menu_item">
-                    <a class="header__menu_item-link" href="#">SERVICE</a>
+                    <a class="header__menu_item-link" href="#service">SERVICE</a>
                 </div>
                 <div class="header__menu_item">
-                    <a class="header__menu_item-link" href="#">WORK</a>
+                    <a class="header__menu_item-link" href="#work">WORK</a>
                 </div>
                 <div class="header__menu_item">
-                    <a class="header__menu_item-link" href="#">BLOG</a>
+                    <a class="header__menu_item-link" href="#blog">BLOG</a>
                 </div>
                 <div class="header__menu_item">
-                    <a class="header__menu_item-link" href="#">CONTACT</a>
+                    <a class="header__menu_item-link" href="#contact">CONTACT</a>
                 </div>
                 <div class="header__menu_shop"></div>
                 <div class="header__menu_search"></div>
@@ -500,7 +500,7 @@
         </div>
     </div>
 
-    <div class="aboutus__wrapper">
+    <div class="aboutus__wrapper" id="about">
         <div class="aboutus">
             <div class="aboutus__text">
                 <div class="aboutus__text_paragraph">What we do</div>
@@ -558,7 +558,7 @@
         </div>
     </div>
    
-    <div class="amazing__wrapper">
+    <div class="amazing__wrapper" id="service">
         <div class="amazing">
             <div class="amazing__text">
                 <div class="amazing__text_paragraph">We work with</div>
@@ -738,7 +738,7 @@
         <div class="logos"></div>
     </div>
      
-    <div class="work__wrapper">
+    <div class="work__wrapper" id="work">
         <div class="work">
             <div class="work__text">
                 <div class="work__text_paragraph">What we do</div>
@@ -838,7 +838,7 @@
         </div>
     </div>
     
-    <div class="blog__wrapper">
+    <div class="blog__wrapper" id="blog">
         <div class="blog">
             <div class="blog__text">
                 <div class="blog__text_paragraph">Happy Clients</div>
@@ -900,7 +900,7 @@
         </div>
     </div>
     
-    <div class="footer__wrapper">
+    <div class="footer__wrapper" id="contact">
         <div class="footer">
             <div class="footer__list">
                 <div class="footer__list_mogo">
@@ -975,9 +975,10 @@
     </div>
 
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
+    <script type="text/javascript">
+    $(document).ready(function(){
 	
 	$(".service__work_list-name").eq(2).addClass("active");
 	$(".service__work_list p").eq(2).show();
@@ -989,8 +990,18 @@ $(document).ready(function(){
 		$(this).siblings(".service__work_list-name").removeClass("active");
 	});
 
-});
-</script>
+    });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+    </script>  
 
 
 </body>
